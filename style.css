@@ -1,0 +1,202 @@
+html {
+  background: #100a1c;
+  background-attachment: fixed;
+  color: white;
+}
+
+body {
+  color: white;
+  font: 300 18px/1.6 "Source Sans Pro",sans-serif;
+  margin: 0;
+  padding: 5em 0 2em;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 300;
+  margin: 0;
+}
+
+/* Gradient text only on Webkit */
+.warning {
+  background: -webkit-linear-gradient(45deg,  #c97874 10%, #463042 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #8c5059;
+  font-weight: 400;
+  margin: 0 auto 6em;
+  max-width: 9em;
+}
+
+.calculator {
+  font-size: 28px;
+  margin: 0 auto;
+  width: 10em;
+}
+
+.calculator:before,
+.calculator:after {
+  content: " ";
+  display: table;
+}
+
+.viewer {
+  color: #8C8C8C;
+  border: 2px solid white;
+  border-radius: 4px;
+  float: center;
+  line-height: 1em;
+  text-align: right;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 8.6em;
+  height: 1em;
+  margin: auto;
+  padding: 10px;
+}
+
+/* Style for clear buttons */
+.btnClr {
+  border: 0;
+  background-color: #AF4C4D;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  float: left;
+  font: inherit;
+  margin: 0.25em;
+  width: 2em;
+  height: 2em;
+  transition: all 0.5s;
+  box-shadow: 2px 2px 1px #FFFFFF;
+}
+
+.btnClr:hover {
+  background-color: white;
+  border: 2px solid #AF4C4D;
+  color: #AF4C4D;
+}
+
+.btnClr:focus {
+  outline: 0;
+}
+
+.btnClr:active {
+	background-color: white;
+    color: black;
+	box-shadow: 5px 5px 3px #999;
+	transform: translateY(2px);
+}
+
+/* Style for number buttons */
+.btnNum {
+  content: attr(data-num);
+  border: 0;
+  background-color: #4CAF4F;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  float: left;
+  font: inherit;
+  margin: 0.25em;
+  width: 2em;
+  height: 2em;
+  transition: all 0.5s;
+  box-shadow: 2px 2px 1px #FFFFFF;
+}
+
+.btnNum:hover {
+  background-color: white;
+  border: 2px solid #4CAF4F;
+  color: black;
+}
+
+.btnNum:focus {
+  outline: 0;
+}
+
+.btnNum:active {
+	background-color: white;
+    color: black;
+	box-shadow: 5px 5px 3px #999;
+	transform: translateY(2px);
+}
+
+/* Style for arithmetic operator buttons */
+.btnArith {
+  content: attr(data-ops);
+  border: 0;
+  background-color: gray;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  float: left;
+  font: inherit;
+  margin: 0.25em;
+  width: 2em;
+  height: 2em;
+  transition: all 0.5s;
+  box-shadow: 2px 2px 1px #FFFFFF;
+}
+
+.btnArith:hover {
+  background-color: white;
+  border: 2px solid gray;
+  color: black;
+}
+
+.btnArith:focus {
+  outline: 0;
+}
+
+.btnArith:active {
+	background-color: white;
+    color: black;
+	box-shadow: 5px 5px 3px #999;
+	transform: translateY(2px);
+}
+
+
+/* Style for final result buttons */
+.btnEqual {
+  content: attr(data-result);
+  border: 0;
+  background-color: #4C4C4C;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  float: left;
+  font: inherit;
+  margin: 0.25em;
+  width: 2em;
+  height: 2em;
+  transition: all 0.5s;
+  box-shadow: 2px 2px 1px #FFFFFF;
+}
+
+.btnEqual:hover {
+  background-color: #4C4C4C;
+  box-shadow: 2px 2px 1px #FFFFFF;
+  color: black;
+}
+
+.btnEqual:focus {
+  outline: 0;
+}
+
+.btnEqual:active {
+	box-shadow: 5px 5px 3px #999;
+	transform: translateY(2px);
+}
