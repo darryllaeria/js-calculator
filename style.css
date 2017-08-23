@@ -95,7 +95,7 @@ h1 {
 .btnNum {
   content: attr(data-num);
   border: 0;
-  background-color: #4CAF4F;
+  background-color: #4C4C4C;
   border-radius: 4px;
   color: white;
   cursor: pointer;
@@ -113,7 +113,7 @@ h1 {
 
 .btnNum:hover {
   background-color: white;
-  border: 2px solid #4CAF4F;
+  border: 2px solid #4C4C4C;
   color: black;
 }
 
@@ -165,12 +165,11 @@ h1 {
 	transform: translateY(2px);
 }
 
-
 /* Style for final result buttons */
 .btnEqual {
   content: attr(data-result);
   border: 0;
-  background-color: #4C4C4C;
+  background-color: #4CAF4F;
   border-radius: 4px;
   color: white;
   cursor: pointer;
@@ -180,14 +179,15 @@ h1 {
   float: left;
   font: inherit;
   margin: 0.25em;
-  width: 2em;
+  width: 7em;
   height: 2em;
   transition: all 0.5s;
   box-shadow: 2px 2px 1px #FFFFFF;
 }
 
 .btnEqual:hover {
-  background-color: #4C4C4C;
+  background-color: white;
+  border: 2px solid #4CAF4F;
   box-shadow: 2px 2px 1px #FFFFFF;
   color: black;
 }
